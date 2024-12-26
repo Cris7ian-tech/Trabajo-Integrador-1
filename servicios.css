@@ -358,10 +358,11 @@ img {
 
 /* seccion servicios  secundarios a modo de cartitas*/
 .otros-servicios{
-    background-color: rgb(228, 226, 225);
+    /* background-color: rgb(228, 226, 225); */
     width: 100%;
     height: 100vh;
-    margin: 1rem 0;
+    margin: 0 auto;
+    
 }
 .otros-servicios__titulo{
     /* font-size: 2.5rem; */
@@ -376,19 +377,20 @@ img {
 .grid-otros-container{
     font-size: clamp(1rem, 1.2vw, 1.2rem);
     font-family: "Raleway", sans-serif;
-    margin-bottom: 1rem;
+    margin: 2rem;
     display: grid;
     gap: 1rem;
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    
+    justify-content: center;
+    align-items: start;
 }
 .secundarios {
     display: flex;
     flex-wrap: nowrap;
-    padding: 1rem;
     /* border: 1px solid #b6b2b2; */
-    height: fit-content;
+    height: 100%;
+    text-align: center;
 }
 
 
@@ -398,10 +400,11 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items:flex-start;
+    padding: 0.5rem;
 }
 .secundarios__img{
     margin: 0 auto; 
-    width: 200px;
+    min-width: 200px;
     height: 220px;
     object-fit: cover;
     border: 1px solid black;
